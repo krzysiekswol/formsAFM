@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS miniprojekt</title>
+    <script
+      src="https://kit.fontawesome.com/c00dc3ee22.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <section class="brand">
+          <a href="#">
+            <img src="https://www.unsplash.it/150/60?image=906" alt="LOGO" />
+          </a>
+        </section>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="tabels.html">Tabele</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="slider">
+        <img src="https://www.unsplash.it/1000/300?image=945" alt="SLIDER" />
+      </section>
+      <div class="contact_form">
+          <form action="" id="contact_form_id">
+            <fieldset class="personal">
+              <legend>Dane personalne</legend>
+              <label for="name">Imię:</label>
+              <input type="text" name="name" id="name" class="input_field" placeholder="imię" autofocus required>
+              <label for="surname">Nazwisko:</label>
+              <input type="text" name="surname" id="surname" class="input_field" placeholder="nazwisko"  required>
+              <!-- <label for="email">email</label>
+              <input type="email" name="email" id="email" class="input_field" placeholder="Wpisz email"  required> -->
+              <label for="age">Wiek:</label>
+              <input type="number"name="age" id="age" class="input_field" placeholder="wiek"  required>
+            </fieldset>
+            <fieldset class="adress">
+              <legend>Dane adresowe</legend>
+              <label for="email_adress">Adres email:</label>
+              <input type="email" name="email_adress" id="email_adress" class="input_field" placeholder="twój@" required>
+              <label for="street">Ulica:</label>
+              <input type="text" name="street" id="street" class="input_field" placeholder="ulica" required>
+              <label for="town">Miasto:</label>
+              <input type="text" name="town" id="town" class="input_field" placeholder="miasto" required>
+              <label for="postcode">Kod pocztowy:</label>
+              <input type="number" name="postcode" id="postcode" class="input_field" placeholder="00-000" required>
+            </fieldset>
+            <fieldset class="userOrder">
+              <legend>Opcje zamówienia:</legend>
+              <p>
+                <input type="radio" name="post" id="inpost" class="delivery" required>
+                <label for="inpost">Paczkomat InPost</label>
+                <i class="fas fa-truck"></i>
+              </p>
+              <p>
+                <input type="radio" name="post" id="post_pl" class="delivery" required>
+                <label for="post_pl">Poczta Polska</label>
+                <i class="fas fa-envelope"></i>
+              </p>
+              <p>
+                <input type="radio" name="post" id="pickupPersonal" class="delivery" required> <label for="pickupPersonal">Odbiór osobisty</label>
+                <i class="fas fa-people-carry"></i>
+              </p>
+            </fieldset>
+            <fieldset class="invoice">
+              <legend>Faktura:</legend>
+                <p>
+                  <input type="checkbox" name="userInvoiceYes" required>
+                  <label for="userInvoiceYes">Tak</label>
+                </p>
+            </fieldset>
+            <fieldset class="userNote">
+              <legend>Uwagi do zamówienia:</legend>
+              <textarea name="note" id="note" cols="100" rows="10" placeholder="Twoje uwagi"></textarea>
+            </fieldset>
+              <button id="submit" type="submit">Wyślij formularz</button>
+              <input type="reset" id="reset">
+            
+          </form>
+      </div>
+      
+      <footer>
+        <p class="copy">Copyright by AFM FRONTEND STUDENTS 2020/2021</p>
+        <p>Social Media:</p>
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com" target="_blank"
+          ><i class="fab fa-youtube-square"></i
+        ></a>
+        <a href="https://www.amazon.com" target="_blank"
+          ><i class="fab fa-amazon"></i
+        ></a>
+      </footer>
+    </div>
+  </body>
+</html>

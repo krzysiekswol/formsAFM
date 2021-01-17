@@ -1,0 +1,202 @@
+/* General rules */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+a{
+    color: rgb(98, 102, 101);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container{
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(129, 148, 141, 0.7);
+}
+
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Brand */
+.brand a, .brand img {
+    display: block;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 3px;
+}
+
+nav a{
+    color: black;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+nav a:active{
+    color: blue;
+}
+
+/* Slider */
+
+.slider img {
+    display: block;
+}
+
+/* Main */
+
+main{
+    display:flex;
+    justify-content: space-between;
+}
+
+article{
+    max-width: 70%;
+    padding: 30px;
+    font-weight: 700;
+}
+
+aside{
+    max-width: 30%;
+    padding: 20px;
+    background-color: lightgrey;
+    border-left: 1px solid darkgrey;
+}
+
+.widget{
+    margin-bottom: 40px;
+}
+.widget img {
+    float: left;
+    /* padding: 20px; */
+    margin: 0 12px 5px 0;
+}
+
+.recent_links ul{
+    list-style-type: square;
+    margin: 0;
+    padding-left: 2px;
+}
+
+.recent_links li{
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: lightgrey;
+    margin: 0;
+    border-top: 3px solid darkgrey;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 0;
+    color: #36454f;
+}
+
+footer p.copy::before {
+    content: "\00A9";
+    padding-right: 5px;
+}
+
+/* Style for multimedia.html */
+
+.youtube {
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.youtube iframe{
+    display: block;
+    margin: auto;
+}
+
+/* Style for contact */
+#contact_form_id{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.personal, .adress{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 45%;
+}
+.input_field{
+    width: 300px;
+}
+
+
+#submit {
+    background-color: #1815f1;
+    color: white;
+    height: 50px;
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid white;
+    border-radius: 3px;
+
+
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+    background-color: #d0e1f9;
+}
+
+.fa-truck, .fa-people-carry, .fa-envelope {
+    margin-left: 0.5rem;
+    color: orange;
+}
+
+#reset {
+    background-color: #d81d10;
+    color: white;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto 5px auto;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+
+
+
+
+
